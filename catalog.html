@@ -9,7 +9,7 @@
 			<div class="container">
 				<div class="logo">
 					<a href="/">
-						<img src="logo.png" width="130" height="50">
+						<img src="logo.png" width="130" height="50" alt="логотип">
 					</a>
 				</div>
 				<nav class="main-navigation">
@@ -20,8 +20,8 @@
 						<li>
 							<a href="#">Клиенты</a>
 						</li>
-						<li>
-							<a href="#">Магазин</a>
+						<li class="active">
+							Магазин
 						</li>
 						<li>
 							<a href="#">Контакты</a>
@@ -29,7 +29,7 @@
 					</ul>
 				</nav>
 				<div class="user-block">
-					<a class="basket" href="#"> <img src="basket.png" height="50" width="50">корзина</a>
+					<a class="basket" href="#">корзина</a>
 				</div>
 			</div>
 		</header>
@@ -38,7 +38,7 @@
 				<h1>Добро пожаловать в магазин готовых макетов</h1>
 			</div>
 			<div class="catalog">
-				<div class="filter">
+				<div class="catalog-filter">
 					<form action="" method="get">
 							<h2>СТОИМОСТЬ:</h2>
 							<!--
@@ -48,7 +48,7 @@
 							<input type="text" name="price1" id="price1" placeholder="0" >
 							<label for='price2'>До:</label>
 							<input type="text" name="price2" id="price2" placeholder="15000">
-							<h2>СЕТКА:</h2>
+							<h2>Сетка:</h2>
 							<label for="gridadaptive">Адаптивная</label>
 							<input id="gridadaptive" type="radio" value="Адаптивная" name="product-type">
 							<label for="gridfix">Фиксированная</label>
@@ -66,8 +66,7 @@
 							<input id="gallery" type="checkbox" value="Галерея" name="speciality" >
 							<label for="basket">Корзина</label>
 							<input id="basket" type="checkbox" value="Корзина" name="speciality" >
-							<button class="show-item" type="submit">Показать
-							</button>
+							<button class="show-item" type="submit">Показать</button>
 					</form>
 				</div>
 				<div class="sort-item">
@@ -83,81 +82,101 @@
 							<a href="#">ПО ФУНКЦИОНАЛУ</a>
 						</li>
 					</ul>
-					<a href="#">
-						<img src="up.png" alt="больше">
-					</a>
-					<a href="#">
-						<img src="down.png" alt="меньше">
-					</a>
+					<a class="up" href="#"></a>
+					<a class="down" href="#"></a>
 				</div>
 				<div class="item-list">
 					<div class="item">
-						<img src="browser.jpg" height="10" width="235">
+						<ul class="mini-pagination">
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
 						<a href="#">
 							<img src="item.jpg" height="240" width="235">
 						</a>
 						<div class="item-fullinfo">
-							<a href="#" class="item-name" >AVIATOR 
+							<a href="#" class="item-name">AVIATOR 
 							<span class="item-info">Одностраничный vакет с авторским дизайном</span>
 							</a>
 							<a class="cost-item" href="#">8000 Р.</a>
 						</div>
 					</div>
 					<div class="item">
-						<img src="browser.jpg" height="10" width="235">
+						<ul class="mini-pagination">
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
 						<a href="#">
 							<img src="item.jpg" height="240" width="235">
 						</a>
 						<div class="item-fullinfo">
-							<a href="#" class="item-name" >Sunset 
+							<a href="#" class="item-name">Sunset 
 							<span class="item-info">Интернет-магазин с личным кабинетом</span>
 							</a>
 							<a class="cost-item" href="#">10000 Р.</a>
 						</div>
 					</div>
 					<div class="item">
-						<img src="browser.jpg" height="10" width="235">
+						<ul class="mini-pagination">
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
 						<a href="#">
 							<img src="item.jpg" height="240" width="235">
 						</a>
 						<div class="item-fullinfo">
-							<a href="#" class="item-name" >FORTE 
+							<a href="#" class="item-name">FORTE 
 							<span class="item-info">Отличный макет для личного блога</span>
 							</a>
 							<a class="cost-item" href="#">5000 Р.</a>
 						</div>
 					</div>
 					<div class="item">
-						<img src="browser.jpg" height="10" width="235">
+						<ul class="mini-pagination">
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
 						<a href="#">
 							<img src="item.jpg" height="240" width="235">
 						</a>
 						<div class="item-fullinfo">
-							<a href="#" class="item-name" >Modern Organic THAI
+							<a href="#" class="item-name">Modern Organic THAI
 							<span class="item-info">Сайт для ресторана быстрого питания</span>
 							</a>
 							<a class="cost-item" href="#">12000 Р.</a>
 						</div>
 					</div>
 					<div class="item">
-						<img src="browser.jpg" height="10" width="235">
+						<ul class="mini-pagination">
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
 						<a href="#">
 							<img src="item.jpg" height="240" width="235">
 						</a>
 						<div class="item-fullinfo">
-							<a href="#" class="item-name" >AVENUE 
+							<a href="#" class="item-name">AVENUE 
 							<span class="item-info">Макет для блога о путешествиях</span>
 							</a>
 							<a class="cost-item" href="#">8000 Р.</a>
 						</div>
 					</div>
 					<div class="item">
-						<img src="browser.jpg" height="10" width="235">
+						<ul class="mini-pagination">
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
 						<a href="#">
 							<img src="item.jpg" height="240" width="235">
 						</a>
 						<div class="item-fullinfo">
-							<a href="#" class="item-name" >DOVETAIL 
+							<a href="#" class="item-name">DOVETAIL 
 							<span class="item-info">Интернет-магазин с галереей товаров</span>
 							</a>
 							<a class="cost-item" href="#">14000 Р.</a>
@@ -179,19 +198,17 @@
 					</li>
 				</ul>
 			<div class="maps">
-				<a href="#">
-					<img src="maps.jpg" height="420" width="100%">
-				</a>
+				<div class="maps-visual">
+				</div>
 				<div class="maps-info">
 					<p>NЁRDS DESIGN STUDIO</p>
 					<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 					<p>тел. +7 (812) 275-75-75</p>
-					<button class="feedback" type="submit"> НАПИШИТЕ НАМ </button>
+					<a href="#" class="feedback">напишите нам</a>
 				</div>
 			</div>
 			<div class="feedback-form">
 				<form action="" class="write-us" method="post">
-					<button class="btn-сlose">Закрыть</button>
 					<label for="username">Ваше имя:</label>
 					<input id="username" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
 					<label for="useremail">Ваш e-mail:</label>
@@ -200,15 +217,16 @@
 					<input id="usermessage" type="text" name="message" value="" placeholder="В свободной форме">
 					<button class="btn" type="submit">Отправить</button>
 				</form>
+				<button class="btn-сlose">Закрыть</button>
 			</div>
 		</main>
 		<footer class="main-footer">
-			<section class="footer-social">
+			<div class="footer-social">
 				<a class="social-btn social-btn-vk" href="http://vk.com">VK</a>
 				<a class="social-btn social-btn-fb" href="http://facebook.com">FB</a>
 				<a class="social-btn social-btn-inst" href="http://instagram.com">Instagram</a>
-			</section>
-			<div class="sale10">
+			</div>
+			<div class="saleN">
 				<h2>Давайте дружить, это выгодно!</h2>
 				<p>Скидка 10% для друзей из социальных сетей.</p>
 			</div>
