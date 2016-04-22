@@ -1,6 +1,6 @@
 body {
 	font-size: 16px;
-	font-style: medium;
+	font-weight: medium;
 	height: 22px;
 	color: #333333;
 	font-family: "Roboto Medium";
@@ -8,16 +8,12 @@ body {
 
 h1 {
 	font-size: 36px;
-	font-style: medium;
 	height: 36px;
 	color: #000000;
-	font-family: "Roboto Medium";
 }
 
 h2 {
 	font-size: 18px;
-	font-style: medium;
 	height: 30px;
 	color: #000000;
-	font-family: "Roboto Medium";
 }
