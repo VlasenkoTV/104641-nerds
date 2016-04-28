@@ -7,9 +7,9 @@
 	</head>
 	<body>
 		<header class="main-header">
-			<div class="container">
+			<div class="container clearfix">
 				<div class="logo">
-						<img src="img/logo.png" width="139" height="56" alt="логотип">
+					<img src="img/logo.png" width="139" height="56" alt="логотип">
 				</div>
 				<nav class="main-navigation">
 					<ul>
@@ -32,8 +32,8 @@
 				</div>
 			</div>
 		</header>
-		<main class="container">
-			<div class="banner-block">
+		<div class="banner-block">
+			<div class="container">
 				<div class="banner banner-one">
 					<p class="speech">Долго, дорого, скрупулезно.</p>
 					<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
@@ -56,7 +56,9 @@
 					</a>
 				</div>
 			</div>
-			<section class="servises">
+		</div>
+		<main class="container">
+			<section class="servises clearfix">
 				<div class="servises-item">
 					<img src="img/slider_red.jpg" width="240" height="124" alt="веб-сайты">
 					<h2>Веб-сайты</h2>
@@ -76,7 +78,7 @@
 					<a href="#" class="order-item green-button">заказать</a>
 				</div>
 			</section>
-			<div class="about">
+			<div class="about clearfix">
 				<div class="about-us">
 					<h1>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h1>
 					<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы</p>
@@ -97,7 +99,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="sponsorship">
+			<div class="sponsorship clearfix">
 				<a href="#">
 					<img src="img/partner_glukhanko.png" width="198" height="37" alt="глуханко">
 				</a>
@@ -108,10 +110,10 @@
 					<img src="img/partner_barbershop.png" width="209" height="90" alt="Барбершоп">
 				</a>
 			</div>
-			<div class="maps">
-				<div class="maps-visual">
-					<img src="img/map.jpg" height="416" width="1199" alt="Барбершоп">
-				</div>
+		</main>
+
+		<div class="maps">
+			<div class="container">
 				<div class="maps-info">
 					<p>NЁRDS DESIGN STUDIO</p>
 					<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -119,21 +121,21 @@
 					<a href="#" class="feedback">напишите нам</a>
 				</div>
 			</div>
-			<div class="feedback-form">
-				<form action="" class="write-us" method="post">
-					<label for="username">Ваше имя:</label>
-					<input id="username" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
-					<label for="useremail">Ваш e-mail:</label>
-					<input id="useremail" type="text" name="email" value="" placeholder="Для отправки ответа">
-					<label for="usermessage">Текст письма:</label>
-					<input id="usermessage" type="text" name="message" value="" placeholder="В свободной форме">
-					<button class="btn" type="submit">Отправить</button>
-				</form>
-				<button class="btn-сlose">Закрыть</button>
-			</div>
-			</div>
-		</main>
-		<footer class="main-footer">
+		</div>
+		<div class="feedback-form">
+			<form action="" class="write-us" method="post">
+				<label for="username">Ваше имя:</label>
+				<input id="username" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
+				<label for="useremail">Ваш e-mail:</label>
+				<input id="useremail" type="text" name="email" value="" placeholder="Для отправки ответа">
+				<label for="usermessage">Текст письма:</label>
+				<input id="usermessage" type="text" name="message" value="" placeholder="В свободной форме">
+				<button class="btn" type="submit">Отправить</button>
+			</form>
+			<button class="btn-сlose">Закрыть</button>
+		</div>
+
+		<footer class="main-footer container clearfix">
 			<div class="footer-social">
 				<a class="social-btn social-btn-vk" href="http://vk.com">VK</a>
 				<a class="social-btn social-btn-fb" href="http://facebook.com">FB</a>
