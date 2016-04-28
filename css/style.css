@@ -45,6 +45,9 @@ h2 {
 	float: left;
 	width: 310px;
 }
+.logo img{
+	display block;
+}
 
 .main-navigation {
 	float: left;
