@@ -58,7 +58,7 @@ h2 {
 	padding: 0px;
 }
 .main-navigation ul li {
-	float: left;
+	display: inline-block;
 	list-style: none;
 }
 .main-navigation ul li a {
@@ -75,7 +75,7 @@ h2 {
 }
 
 .banner-block {
-	background: #eee;
+	clear: both;
 }
 
 .banner-block h1 {
@@ -94,9 +94,11 @@ h2 {
 }
 .banner-two {
 	background: url(../img/banner2.png) no-repeat center right;;
+	display: none;
 }
 .banner-three {
 	background: url(../img/banner3.png) no-repeat center right;;
+	display: none;
 }
 
 .banner p {
@@ -150,6 +152,10 @@ h2 {
 	text-decoration: none;
 }
 
+.servises-item img {
+		display block;
+}
+
 .about {
 	width: 100%;
 	padding-top: 60px;
@@ -157,11 +163,12 @@ h2 {
 }
 .about-us {
 	float: left;
-	width: 600px
+	width: 600px;
 }
 
 .about-how {
 	float: right;
+	width: 270px;
 }
 
 .sponsorship {
@@ -169,10 +176,10 @@ h2 {
 	padding-bottom: 40px;
 }
 .sponsorship a {
-	display: block;
-	float: left;
-	width: 240px;
-	margin-right: 80px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	width: 33%;
 }
 .sponsorship a:nth-child(3n) {
 	margin-right: 0px;
@@ -208,6 +215,7 @@ h2 {
 }
 .sort-item ul li {
 	display: inline-block;
+	vertical-align: middle;
 }
 .sort-item a {
 	display: inline-block;
@@ -268,7 +276,7 @@ h2 {
 	width: 240px;
 }
 
-.saleN {
+.sale {
 	float: left;
 	width: 640px;
 }
