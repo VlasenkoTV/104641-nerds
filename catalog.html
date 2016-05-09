@@ -3,7 +3,9 @@
 	<head>
 		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
+		<link href="css/symbols-nerds.css" rel="stylesheet">
 		<meta charset="utf-8">
+		<link href='https://fonts.googleapis.com/css?family=Roboto:500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<title>Нёрдс каталог</title>
 	</head>
 	<body>
@@ -12,7 +14,9 @@
 			<div class="container">
 				<div class="clearfix">
 					<div class="logo">
-						<img src="img/logo.png" width="139" height="56" alt="логотип">
+						<a href="index.html">
+							<img src="img/logo.png" width="139" height="56" alt="логотип">
+						</a>
 					</div>
 					<nav class="main-navigation">
 						<ul>
@@ -31,7 +35,7 @@
 						</ul>
 					</nav>
 					<div class="user-block">
-						<a class="basket" href="#">корзина</a>
+						<a class="icon-basket" href="#">корзина</a>
 					</div>
 				</div>
 				<div class="banner-block">
@@ -43,33 +47,54 @@
 		<main class="container clearfix">
 			<div class="catalog-filter">
 				<form action="" method="get">
-						<h2>СТОИМОСТЬ:</h2>
-						<!--
-						Не знаю как делать ползунок c двумя пилюпками, наверное это не HTML'ем делают? 
-						-->
-						<label class="filter-label filter-slider-label" for='price1'>От</label>
-						<input class="filter-input filter-slider-input" type="text" name="price1" id="price1" placeholder="0" >
-						<label class="filter-label filter-slider-label" for='price2'>До:</label>
-						<input class="filter-input filter-slider-input" type="text" name="price2" id="price2" placeholder="15000">
-						<h2>Сетка:</h2>
-						<label class="filter-label" for="gridadaptive">Адаптивная</label>
-						<input class="filter-input filter-radio-input" id="gridadaptive" type="radio" value="Адаптивная" name="product-type">
-						<label class="filter-label" for="gridfix">Фиксированная</label>
-						<input class="filter-input filter-radio-input" id="gridfix" type="radio" value="Фиксированная" name="product-type">
-						<label class="filter-label" for="gridflex">Резиновая</label>
-						<input class="filter-input filter-radio-input" id="gridflex" type="radio" value="Резиновая" name="product-type">
-						<h2>ОСОБЕННОСТИ:</h2>
-						<label class="filter-label" for="slider">Слайдер</label>
-						<input class="filter-input filter-checkbox-input" id="slider" type="checkbox" value="Слайдер" name="speciality" checked>
-						<label class="filter-label" for="privileges">Блок преимуществ</label>
-						<input class="filter-input filter-checkbox-input" id="privileges" type="checkbox" value="Блок преимуществ" name="speciality" >
-						<label class="filter-label" for="news">Новости</label>
-						<input class="filter-input filter-checkbox-input" id="news" type="checkbox" value="Новости" name="speciality" checked>
-						<label class="filter-label" for="gallery">Галерея</label>
-						<input class="filter-input filter-checkbox-input" id="gallery" type="checkbox" value="Галерея" name="speciality" >
-						<label class="filter-label" for="basket">Корзина</label>
-						<input class="filter-input" id="basket" type="checkbox" value="Корзина" name="speciality" >
-						<button class="show-item" type="submit">Показать</button>
+					<h2>Cтоимость:</h2>
+					<div class="range-filter">
+						<div class="range-controls">
+							<div class="scale">
+								<div style="margin-left: 10px; width: 150px" class="bar">	
+								</div>
+							</div>
+							<div class="toggle min-toggle">
+								
+							</div>
+							<div class="toggle max-toggle">
+								
+							</div>
+						</div>
+						<div class="price-controls">
+							от <input type="text" class="min-price" value="0">
+							до <input type="text" class="max-price" value="15 000">
+						</div>
+					</div>
+
+					<h2>Сетка:</h2>
+
+					<input class="filter-input filter-radio-input" id="gridadaptive" type="radio" value="Адаптивная" name="product-type">
+					<label class="filter-label icon-a" for="gridadaptive">Адаптивная</label>
+
+					<input class="filter-input filter-radio-input" id="gridfix" type="radio" value="Фиксированная" name="product-type">
+					<label class="filter-label icon-a" for="gridfix">Фиксированная</label>
+
+					<input class="filter-input filter-radio-input" id="gridflex" type="radio" value="Резиновая" name="product-type">
+					<label class="filter-label icon-a" for="gridflex">Резиновая</label>
+
+					<h2>ОСОБЕННОСТИ:</h2>
+					<input class="filter-input filter-checkbox-input" id="slider" type="checkbox" value="Слайдер" name="speciality" checked>
+					<label class="filter-label" for="slider">Слайдер</label>
+
+					<input class="filter-input filter-checkbox-input" id="privileges" type="checkbox" value="Блок преимуществ" name="speciality" >
+					<label class="filter-label" for="privileges">Блок преимуществ</label>
+
+					<input class="filter-input filter-checkbox-input" id="news" type="checkbox" value="Новости" name="speciality" checked>
+					<label class="filter-label" for="news">Новости</label>
+
+					<input class="filter-input filter-checkbox-input" id="gallery" type="checkbox" value="Галерея" name="speciality" >
+					<label class="filter-label" for="gallery">Галерея</label>
+
+					<input class="filter-input filter-checkbox-input" id="basket" type="checkbox" value="Корзина" name="speciality" >
+					<label class="filter-label" for="basket">Корзина</label>
+
+					<button class="show-item" type="submit">Показать</button>
 				</form>
 			</div>
 			<div class="catalog">
@@ -86,8 +111,8 @@
 							<a href="#">ПО ФУНКЦИОНАЛУ</a>
 						</li>
 					</ul>
-					<a class="up" href="#"></a>
-					<a class="down" href="#"></a>
+					<a class="icon-down-dir active" href="#"></a>
+					<a class="icon-up-dir" href="#"></a>
 				</div>
 				<div class="item-list clearfix">
 					<div class="item">
@@ -100,8 +125,9 @@
 							<img src="img/catalog_item_1.jpg" height="240" width="240">
 						</a>
 						<div class="item-fullinfo">
-							<a href="#" class="item-name">AVIATOR 
-							<span class="item-info">Одностраничный vакет с авторским дизайном</span>
+							<a class="item-link" href="#">
+								<span class="item-name">AVIATOR </span>
+								<span class="item-info">Одностраничный vакет с авторским дизайном</span>
 							</a>
 							<a class="cost-item" href="#">8000 Р.</a>
 						</div>
@@ -116,8 +142,9 @@
 							<img src="img/catalog_item_2.jpg" height="240" width="240">
 						</a>
 						<div class="item-fullinfo">
-							<a href="#" class="item-name">Sunset 
-							<span class="item-info">Интернет-магазин с личным кабинетом</span>
+							<a class="item-link" href="#">
+								<span class="item-name">Sunset </span>
+								<span class="item-info">Интернет-магазин с&nbsp;личным кабинетом</span>
 							</a>
 							<a class="cost-item" href="#">10000 Р.</a>
 						</div>
@@ -132,8 +159,9 @@
 							<img src="img/catalog_item_3.jpg" height="240" width="240">
 						</a>
 						<div class="item-fullinfo">
-							<a href="#" class="item-name">FORTE 
-							<span class="item-info">Отличный макет для личного блога</span>
+							<a class="item-link" href="#">
+								<span class="item-name">FORTE </span>
+								<span class="item-info">Отличный макет для личного блога</span>
 							</a>
 							<a class="cost-item" href="#">5000 Р.</a>
 						</div>
@@ -148,8 +176,9 @@
 							<img src="img/catalog_item_4.jpg" height="240" width="240">
 						</a>
 						<div class="item-fullinfo">
-							<a href="#" class="item-name">Modern Organic THAI
-							<span class="item-info">Сайт для ресторана быстрого питания</span>
+							<a class="item-link" href="#">
+								<span class="item-name">Modern Organic THAI</span>
+								<span class="item-info">Сайт для ресторана быстрого питания</span>
 							</a>
 							<a class="cost-item" href="#">12000 Р.</a>
 						</div>
@@ -164,8 +193,9 @@
 							<img src="img/catalog_item_5.jpg" height="240" width="240">
 						</a>
 						<div class="item-fullinfo">
-							<a href="#" class="item-name">AVENUE 
-							<span class="item-info">Макет для блога о путешествиях</span>
+							<a class="item-link" href="#">
+								<span class="item-name">AVENUE </span>
+								<span class="item-info">Макет для блога о путешествиях</span>
 							</a>
 							<a class="cost-item" href="#">8000 Р.</a>
 						</div>
@@ -180,8 +210,9 @@
 							<img src="img/catalog_item_6.jpg" height="240" width="240">
 						</a>
 						<div class="item-fullinfo">
-							<a href="#" class="item-name">DOVETAIL 
-							<span class="item-info">Интернет-магазин с галереей товаров</span>
+							<a class="item-link" href="#">
+								<span class="item-name">DOVETAIL </span>
+								<span class="item-info">Интернет-магазин с галереей товаров</span>
 							</a>
 							<a class="cost-item" href="#">14000 Р.</a>
 						</div>
@@ -197,7 +228,7 @@
 					<li>
 						<a href="#">3</a>
 					</li>
-					<li>
+					<li class="page-next">
 						<a href="#">следующая</a>
 					</li>
 				</ul>
@@ -213,24 +244,26 @@
 				</div>
 			</div>
 		</div>
-		<div class="feedback-form">
-			<form action="" class="write-us" method="post">
-				<label for="username">Ваше имя:</label>
-				<input id="username" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
-				<label for="useremail">Ваш e-mail:</label>
-				<input id="useremail" type="text" name="email" value="" placeholder="Для отправки ответа">
-				<label for="usermessage">Текст письма:</label>
-				<input id="usermessage" type="text" name="message" value="" placeholder="В свободной форме">
-				<button class="btn" type="submit">Отправить</button>
-			</form>
-			<button class="btn-сlose">Закрыть</button>
+		<div class="modal">
+			<div class="feedback-form">
+				<form action="" class="write-us" method="post">
+					<label for="username">Ваше имя:</label>
+					<input id="username" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
+					<label for="useremail">Ваш e-mail:</label>
+					<input id="useremail" type="text" name="email" value="" placeholder="Для отправки ответа">
+					<label for="usermessage">Текст письма:</label>
+					<input id="usermessage" type="text" name="message" value="" placeholder="В свободной форме">
+					<button class="btn" type="submit">Отправить</button>
+				</form>
+			</div>
+			<button class="modal-close" title="Закрыть">Закрыть</button>
 		</div>
 
 		<footer class="main-footer container clearfix">
 			<div class="footer-social">
-				<a class="social-btn social-btn-vk" href="http://vk.com">VK</a>
-				<a class="social-btn social-btn-fb" href="http://facebook.com">FB</a>
-				<a class="social-btn social-btn-inst" href="http://instagram.com">Instagram</a>
+				<a class="social-btn icon-vk" href="http://vk.com"></a>
+				<a class="social-btn icon-facebook" href="http://facebook.com"></a>
+				<a class="social-btn icon-instagramm" href="http://instagram.com"></a>
 			</div>
 			<div class="sale">
 				<h2>Давайте дружить, это выгодно!</h2>
