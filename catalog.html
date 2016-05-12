@@ -88,13 +88,13 @@
 					<input class="filter-input filter-checkbox-input" id="news" type="checkbox" value="Новости" name="speciality" checked>
 					<label class="filter-label" for="news">Новости</label>
 
-					<input class="filter-input filter-checkbox-input" id="gallery" type="checkbox" value="Галерея" name="speciality" >
+					<input class="filter-input filter-checkbox-input" id="gallery" type="checkbox" value="Галерея" name="speciality" disabled>
 					<label class="filter-label" for="gallery">Галерея</label>
 
 					<input class="filter-input filter-checkbox-input" id="basket" type="checkbox" value="Корзина" name="speciality" >
 					<label class="filter-label" for="basket">Корзина</label>
 
-					<button class="show-item" type="submit">Показать</button>
+					<button class="show-item btn btn-gray" type="submit">Показать</button>
 				</form>
 			</div>
 			<div class="catalog">
@@ -102,7 +102,7 @@
 					<p>СОРТИРОВАТЬ:</p>
 					<ul>
 						<li>
-							<a href="#">ПО ЦЕНЕ</a>
+							<a class="active" href="#">ПО ЦЕНЕ</a>
 						</li>
 						<li>
 							<a href="#">ПО ТИПУ</a>
@@ -129,7 +129,7 @@
 								<span class="item-name">AVIATOR </span>
 								<span class="item-info">Одностраничный vакет с авторским дизайном</span>
 							</a>
-							<a class="cost-item" href="#">8000 Р.</a>
+							<a class="cost-item btn" href="#">8000 Р.</a>
 						</div>
 					</div>
 					<div class="item">
@@ -146,7 +146,7 @@
 								<span class="item-name">Sunset </span>
 								<span class="item-info">Интернет-магазин с&nbsp;личным кабинетом</span>
 							</a>
-							<a class="cost-item" href="#">10000 Р.</a>
+							<a class="cost-item btn" href="#">10000 Р.</a>
 						</div>
 					</div>
 					<div class="item">
@@ -163,7 +163,7 @@
 								<span class="item-name">FORTE </span>
 								<span class="item-info">Отличный макет для личного блога</span>
 							</a>
-							<a class="cost-item" href="#">5000 Р.</a>
+							<a class="cost-item btn" href="#">5000 Р.</a>
 						</div>
 					</div>
 					<div class="item">
@@ -180,7 +180,7 @@
 								<span class="item-name">Modern Organic THAI</span>
 								<span class="item-info">Сайт для ресторана быстрого питания</span>
 							</a>
-							<a class="cost-item" href="#">12000 Р.</a>
+							<a class="cost-item btn" href="#">12000 Р.</a>
 						</div>
 					</div>
 					<div class="item">
@@ -197,7 +197,7 @@
 								<span class="item-name">AVENUE </span>
 								<span class="item-info">Макет для блога о путешествиях</span>
 							</a>
-							<a class="cost-item" href="#">8000 Р.</a>
+							<a class="cost-item btn" href="#">8000 Р.</a>
 						</div>
 					</div>
 					<div class="item">
@@ -214,7 +214,7 @@
 								<span class="item-name">DOVETAIL </span>
 								<span class="item-info">Интернет-магазин с галереей товаров</span>
 							</a>
-							<a class="cost-item" href="#">14000 Р.</a>
+							<a class="cost-item btn" href="#">14000 Р.</a>
 						</div>
 					</div>
 				</div>
@@ -247,12 +247,20 @@
 		<div class="modal">
 			<div class="feedback-form">
 				<form action="" class="write-us" method="post">
-					<label for="username">Ваше имя:</label>
-					<input id="username" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
-					<label for="useremail">Ваш e-mail:</label>
-					<input id="useremail" type="text" name="email" value="" placeholder="Для отправки ответа">
-					<label for="usermessage">Текст письма:</label>
-					<input id="usermessage" type="text" name="message" value="" placeholder="В свободной форме">
+					<div class="clearfix">
+						<div class="form-field short">
+							<label for="username">Ваше имя:</label>
+							<input id="username" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
+						</div>
+						<div class="form-field short">
+							<label for="useremail">Ваш e-mail:</label>
+							<input id="useremail" type="text" name="email" value="" placeholder="Для отправки ответа">
+						</div>
+					</div>
+					<div class="form-field long">
+						<label for="usermessage">Текст письма:</label>
+						<textarea id="usermessage" type="text" name="message" value="" placeholder="В свободной форме"></textarea>
+					</div>
 					<button class="btn" type="submit">Отправить</button>
 				</form>
 			</div>
@@ -261,9 +269,9 @@
 
 		<footer class="main-footer container clearfix">
 			<div class="footer-social">
-				<a class="social-btn icon-vk" href="http://vk.com"></a>
-				<a class="social-btn icon-facebook" href="http://facebook.com"></a>
-				<a class="social-btn icon-instagramm" href="http://instagram.com"></a>
+				<a class="social-btn icon-vk" href="#"></a>
+				<a class="social-btn icon-facebook" href="#"></a>
+				<a class="social-btn icon-instagramm" href="#"></a>
 			</div>
 			<div class="sale">
 				<h2>Давайте дружить, это выгодно!</h2>
