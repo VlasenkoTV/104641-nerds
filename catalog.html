@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head>
 		<link href="css/normalize.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
+		<link href="css/style.min.css" rel="stylesheet">
 		<meta charset="utf-8">
 		<link href='https://fonts.googleapis.com/css?family=Roboto:500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<title>Нёрдс каталог</title>
@@ -44,58 +44,56 @@
 		</header>
 
 		<main class="container clearfix">
-			<div class="catalog-filter">
-				<form action="/" method="get">
-					<h2>Cтоимость:</h2>
-					<div class="range-filter">
-						<div class="range-controls">
-							<div class="scale">
-								<div style="margin-left: 10px; width: 150px" class="bar">	
-								</div>
-							</div>
-							<div class="toggle min-toggle">
-								
-							</div>
-							<div class="toggle max-toggle">
-								
+			<form class="catalog-filter" action="/" method="get">
+				<h2>Cтоимость:</h2>
+				<div class="range-filter">
+					<div class="range-controls">
+						<div class="scale">
+							<div style="margin-left: 10px; width: 150px" class="bar">	
 							</div>
 						</div>
-						<div class="price-controls">
-							от <input type="text" class="min-price" value="0">
-							до <input type="text" class="max-price" value="15 000">
+						<div class="toggle min-toggle">
+							
+						</div>
+						<div class="toggle max-toggle">
+							
 						</div>
 					</div>
+					<div class="price-controls">
+						от <input type="text" class="min-price" value="0">
+						до <input type="text" class="max-price" value="15 000">
+					</div>
+				</div>
 
-					<h2>Сетка:</h2>
+				<h2>Сетка:</h2>
 
-					<input class="filter-input filter-radio-input" id="gridadaptive" type="radio" value="Адаптивная" name="product-type">
-					<label class="filter-label icon-a" for="gridadaptive">Адаптивная</label>
+				<input class="filter-input filter-radio-input" id="gridadaptive" type="radio" value="Адаптивная" name="product-type">
+				<label class="filter-label icon-a" for="gridadaptive">Адаптивная</label>
 
-					<input class="filter-input filter-radio-input" id="gridfix" type="radio" value="Фиксированная" name="product-type">
-					<label class="filter-label icon-a" for="gridfix">Фиксированная</label>
+				<input class="filter-input filter-radio-input" id="gridfix" type="radio" value="Фиксированная" name="product-type">
+				<label class="filter-label icon-a" for="gridfix">Фиксированная</label>
 
-					<input class="filter-input filter-radio-input" id="gridflex" type="radio" value="Резиновая" name="product-type">
-					<label class="filter-label icon-a" for="gridflex">Резиновая</label>
+				<input class="filter-input filter-radio-input" id="gridflex" type="radio" value="Резиновая" name="product-type">
+				<label class="filter-label icon-a" for="gridflex">Резиновая</label>
 
-					<h2>ОСОБЕННОСТИ:</h2>
-					<input class="filter-input filter-checkbox-input" id="slider" type="checkbox" value="Слайдер" name="speciality" checked>
-					<label class="filter-label" for="slider">Слайдер</label>
+				<h2>ОСОБЕННОСТИ:</h2>
+				<input class="filter-input filter-checkbox-input" id="slider" type="checkbox" value="Слайдер" name="speciality" checked>
+				<label class="filter-label" for="slider">Слайдер</label>
 
-					<input class="filter-input filter-checkbox-input" id="privileges" type="checkbox" value="Блок преимуществ" name="speciality" >
-					<label class="filter-label" for="privileges">Блок преимуществ</label>
+				<input class="filter-input filter-checkbox-input" id="privileges" type="checkbox" value="Блок преимуществ" name="speciality" >
+				<label class="filter-label" for="privileges">Блок преимуществ</label>
 
-					<input class="filter-input filter-checkbox-input" id="news" type="checkbox" value="Новости" name="speciality" checked>
-					<label class="filter-label" for="news">Новости</label>
+				<input class="filter-input filter-checkbox-input" id="news" type="checkbox" value="Новости" name="speciality" checked>
+				<label class="filter-label" for="news">Новости</label>
 
-					<input class="filter-input filter-checkbox-input" id="gallery" type="checkbox" value="Галерея" name="speciality" disabled>
-					<label class="filter-label" for="gallery">Галерея</label>
+				<input class="filter-input filter-checkbox-input" id="gallery" type="checkbox" value="Галерея" name="speciality" disabled>
+				<label class="filter-label" for="gallery">Галерея</label>
 
-					<input class="filter-input filter-checkbox-input" id="basket" type="checkbox" value="Корзина" name="speciality" >
-					<label class="filter-label" for="basket">Корзина</label>
+				<input class="filter-input filter-checkbox-input" id="basket" type="checkbox" value="Корзина" name="speciality" >
+				<label class="filter-label" for="basket">Корзина</label>
 
-					<button class="show-item btn btn-gray" type="submit">Показать</button>
-				</form>
-			</div>
+				<button class="show-item btn btn-gray" type="submit">Показать</button>
+			</form>
 			<div class="catalog">
 				<div class="sort-item">
 					<p>СОРТИРОВАТЬ:</p>
@@ -121,7 +119,7 @@
 							<li></li>
 						</ul>
 						<a href="#">
-							<img src="img/catalog_item_1.jpg" height="240" width="240">
+							<img src="img/catalog_item_1.jpg" height="240" width="240" alt="AVIATOR">
 						</a>
 						<div class="item-fullinfo">
 							<a class="item-link" href="#">
@@ -138,7 +136,7 @@
 							<li></li>
 						</ul>
 						<a href="#">
-							<img src="img/catalog_item_2.jpg" height="240" width="240">
+							<img src="img/catalog_item_2.jpg" height="240" width="240" alt="Sunset">
 						</a>
 						<div class="item-fullinfo">
 							<a class="item-link" href="#">
@@ -155,7 +153,7 @@
 							<li></li>
 						</ul>
 						<a href="#">
-							<img src="img/catalog_item_3.jpg" height="240" width="240">
+							<img src="img/catalog_item_3.jpg" height="240" width="240" alt="FORTE">
 						</a>
 						<div class="item-fullinfo">
 							<a class="item-link" href="#">
@@ -172,7 +170,7 @@
 							<li></li>
 						</ul>
 						<a href="#">
-							<img src="img/catalog_item_4.jpg" height="240" width="240">
+							<img src="img/catalog_item_4.jpg" height="240" width="240" alt="Modern Organic THAI">
 						</a>
 						<div class="item-fullinfo">
 							<a class="item-link" href="#">
@@ -189,7 +187,7 @@
 							<li></li>
 						</ul>
 						<a href="#">
-							<img src="img/catalog_item_5.jpg" height="240" width="240">
+							<img src="img/catalog_item_5.jpg" height="240" width="240" alt="AVENUE">
 						</a>
 						<div class="item-fullinfo">
 							<a class="item-link" href="#">
@@ -206,7 +204,7 @@
 							<li></li>
 						</ul>
 						<a href="#">
-							<img src="img/catalog_item_6.jpg" height="240" width="240">
+							<img src="img/catalog_item_6.jpg" height="240" width="240" alt="DOVETAIL">
 						</a>
 						<div class="item-fullinfo">
 							<a class="item-link" href="#">
@@ -238,7 +236,7 @@
 				<div class="maps-info">
 					<p>NЁRDS DESIGN STUDIO</p>
 					<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-					<p>тел. +7 (812) 275-75-75</p>
+					<p class="phone">тел. +7 (812) 275-75-75</p>
 					<a href="#" class="feedback">напишите нам</a>
 				</div>
 			</div>
