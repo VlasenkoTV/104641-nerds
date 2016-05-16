@@ -204,17 +204,17 @@ textarea {
 	border-bottom: 2px solid #eee;
 }
 
-.main-navigation li:hover a,
+.main-navigation-item:hover a,
 .user-block a:hover,
 .user-block a:hover::before {
 	color: #fb565a;
 }
 
-.main-navigation li span {
+.main-navigation-item span {
 	border-bottom: 2px solid #fb565a;
 }
 
-.main-navigation li:active a,
+.main-navigation-item:active a,
 .user-block a:active,
 .user-block a:active::before {
 	color: #959595;
@@ -238,26 +238,26 @@ textarea {
 	border-bottom: 2px solid #eee;
 }
 
-.user-block a:before {
-	color:#a6a6a6;
+.user-block a::before {
+	color: #a6a6a6;
 	position: absolute;
 	left: -8px;
 	top: 14px;
 }
 
 .banner-block {
-	position:relative;
+	position: relative;
 }
 
 .banner-controls {
-	position:absolute;
-	bottom:95px;
-	left:50%;
-	width:200px;
-	height:10px;
-	margin-left:-100px;
-	text-align:center;
-	z-index:1000;
+	position: absolute;
+	bottom: 95px;
+	left: 50%;
+	width: 200px;
+	height: 10px;
+	margin-left: -100px;
+	text-align: center;
+	z-index: 1000;
 }
 
 .banner-block input {
@@ -265,21 +265,21 @@ textarea {
 }
 
 .banner-controls label {
-	display:inline-block;
-	width:4px;
-	height:4px;
-	margin:0 3px;
-	background:white;
-	border:3px solid white;
-	vertical-align:top;
-	border-radius:50%;
-	cursor:pointer;
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	margin: 0 3px;
+	background: white;
+	border: 3px solid white;
+	vertical-align: top;
+	border-radius: 50%;
+	cursor: pointer;
 }
 
 #btn-1:checked ~ .banner-controls label[for="btn-1"],
 #btn-2:checked ~ .banner-controls label[for="btn-2"],
 #btn-3:checked ~ .banner-controls label[for="btn-3"] {
-	background:#c1c1c1;
+	background: #c1c1c1;
 }
 
 #btn-1:checked ~ .banners .banner:nth-child(1),
@@ -405,7 +405,7 @@ textarea {
 	margin-bottom: 22px;
 }
 
-.about li:before {
+.about li::before {
 	position: absolute;
 	display: block;
 	content: "";
@@ -516,11 +516,9 @@ textarea {
 	background: #fb565a;
 	width: 40px;
 	height: 40px;
-
 	border: none;
 	outline: none;
 	border-radius: 50%;
-
 	font-size: 0px;
 	text-indent: -99999px;
 }
@@ -760,13 +758,13 @@ textarea {
 	vertical-align: baseline;
 }
 
-.sort-item ul li {
+.sort-item-link {
 	padding-left: 38px;
 	display: inline-block;
 	vertical-align: middle;
 }
 
-.sort-item ul li a {
+.sort-item-link a {
 	font-size: 12px;
 	color: #c1c1c1;
 	border-bottom: 1px dotted #00ca74;
@@ -779,9 +777,9 @@ textarea {
 	vertical-align: middle;
 }
 
-.sort-item a.active {
+.sort-item-link a.active {
 	color: #000000;
-	border-bottom: none;
+	border-bottom: 1px solid white;
 }
 
 .sort-item a.active::before {
@@ -794,23 +792,21 @@ textarea {
 	color: #c1c1c1;
 }
 
-.sort-item ul li:hover a {
+.sort-item-link:hover a {
 	border-bottom: 1px solid #00ca74; 
 }
 
-.sort-item ul li:hover a,
+.sort-item-link:hover a,
 .sort-item a:hover,
-.sort-item a:hover::before
-{
+.sort-item a:hover::before {
 	color: #000000;
 }
 
-.sort-item ul li:active a,
+.sort-item-link:active a,
 .sort-item a:active,
-.sort-item a:active::before
-{
+.sort-item a:active::before {
 	color: #000000;
-	border-bottom: none;
+	border-bottom: 1px solid white;
 }
 
 .item-list {
@@ -825,8 +821,7 @@ textarea {
 	position: relative;
 }
 
-.item:nth-child(2n)
-{
+.item:nth-child(2n) {
 	margin-right: 0px;
 }
 
@@ -859,7 +854,7 @@ textarea {
 	float: left;
 }
 
-.item:hover .item-fullinfo  {
+.item:hover .item-fullinfo {
 	display: block;
 }
 
@@ -872,7 +867,6 @@ textarea {
 	top: 50px;
 	background: white;
 	padding: 20px;
-
 	text-align: center;
 }
 
@@ -939,7 +933,7 @@ textarea {
 	padding: 0px;
 }
 
-.pagination li a {
+.pagination a {
 	display: block;
 	padding: 5px;
 	text-align: center;
@@ -994,7 +988,7 @@ textarea {
 }
 
 .sale h2 {
-	margin:0;
+	margin: 0;
 	font-size: 36px;
 }
 
